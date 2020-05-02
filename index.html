@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="font-style: italic;">Pawan's Portfolio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" rel="javascript">
+             $(document).ready(function(){
+                let scroll_link = $('.scroll');
+           
+             //smooth scrolling -----------------------
+             scroll_link.click(function(e){
+                 e.preventDefault();
+                 let url = $('body').find($(this).attr('href')).offset().top;
+                 $('html, body').animate({
+                   scrollTop : url
+                 },700);
+                 $(this).parent().addClass('active');
+                 $(this).parent().siblings().removeClass('active');
+                 return false;	
+              });
+           });
+
+            
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+        
+            <nav class=" navbar navbar-expand-lg navbar-dark bg-primary text-light">
+                <a class="navbar-brand" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <img src="Logo1.png" height="70" width="100" alt="Pawan logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"
+                  aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNav">
+                  <ul class="navbar-nav mx-auto" id="myNav1" style="vertical-align: middle; font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    <li class="nav-item ">
+                      <a class="nav-link text-light scroll" href="#home"><i class="fa fa-home fa-lg fa-fw" aria-hidden="true"></i>Home
+                        
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light scroll" href="#prof"><i class="fa fa-book fa-lg fa-fw"  aria-hidden="true"></i>Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light scroll" href="#proj"><i class="fa fa-flask fa-lg fa-fw" aria-hidden="true"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light scroll" href="#cont"><i class="fa fa-mobile fa-lg fa-fw" aria-hidden="true"></i>Contact</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                      <a class="nav-link waves-effect waves-dark text-light" href="https:/www.twitter.com/iampks99">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link waves-effect waves-light text-light" href="https://github.com/brigadierpratap">
+                        <i class="fa fa-github-square fa-2x"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light text-light" href="https://www.facebook.com/pawanskillz">
+                          <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light text-light" href="https://www.instagram.com/brigadier_pratap/">
+                          <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+                </nav>
+                <div style="background: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)" class="container-fluid page-holder bg-cover" id="home">
+
+                    <div class="container-fluid py-5">
+                    
+                        <header class="text-center text-white py-5">
+                            <img src="photo2.jpg" alt="avatar" class="img-fluid mx-auto rounded-circle h-50 w-50">
+                            <h1 style="font-family: 'Allura', cursive; font-size: 8vw;">Pawan Singh</h1>
+                        </header>
+              
+                        <div class="text-white text-center" >
+                            <p class="lead" style="font-family: 'Dancing Script', cursive; font-size: 3.0vw;">I am an Undergrad student at NIT Patna. <br> An aspiring developer and a Linux enthusiast.</p>
+                            <p class="lead" style="font-family: 'Calligraffitti', cursive; font-size: 3.5vw; text-decoration: underline;">I observe and absorb!</p>
+                        </div>
+              
+                    </div>
+                </div>
+            
+                <div class="container-fluid page-holder bg-cover my-1 " style="background: url(https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1840&q=80);" id="prof">
+                    <div class="container-fluid mx-auto py-2">
+                        <header class="text-center text-white ">
+                            <h1 style="font-family: 'Dancing Script', cursive; font-size: 4.0vw; font-style: italic; text-decoration: underline; text-decoration-color: white;">My Profile</h1>
+                        </header>
+                        <div class="text-white"><h2 class="lead text-light" style="font-family: 'Dancing Script', cursive; font-size: 3.0vw;"><i class="fa fa-square-o " aria-hidden="true"></i>My Skills</h2></div>
+                        <div class="row text-light my-5 mb-5">
+                            <div class="col-md-4 col-sm-6 col-lg-3">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="htmlimg.webp" alt="HTML logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">H T M L 5</h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success success progress-bar-striped" style="width:85%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">85%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-3 text-wrap">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="java-512.webp" alt="Java logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">J a v a </h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success progress-bar-striped" style="width:85%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">85%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-3 text-wrap">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="Cicon.webp" alt="HTML logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">C Programming</h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success progress-bar-striped" style="width:60%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-3 text-wrap">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="iconfinder_python_308445.png" alt="HTML logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">Python</h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success progress-bar-striped" style="width:80%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-3">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="ubuntu-128.webp" alt="HTML logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">Linux O S</h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success progress-bar-striped" style="width:85%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-3 text-wrap">
+                                <div class="media mb-1 mt-1">
+                                    <img class="d-flex mr-3 img-fluid h-25 w-25 align-self-center" src="Boot.png" alt="Java logo">
+                                    <div class="media-body text-wrap">
+                                        <h5 class="mt-1 font-weight-bold " style="font-family: 'Calligraffitti', cursive; font-size: 2vw; text-decoration: underline;">Bootstrap </h5><br>
+                                        <div class="progress" style="height:3vh">
+                                            <div class="progress-bar bg-success progress-bar-striped" style="width:90%; font-size: 1.5vw;font-style: italic;font-family: 'Dancing Script', cursive;">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-white"><h2 class="lead text-light" style="font-family: 'Dancing Script', cursive; font-size: 3.0vw;"><i class="fa fa-square-o " aria-hidden="true"></i>Education</h2></div>
+                        <div class="row justify-content-center text-light"> <h2 class="lead" style="font-weight: 700; font-family: 'Calligraffitti',cursive; font-size: 2.5vw; text-decoration: underline;">Graduation</h2></div>
+                        <div class="container-fluid text-light">
+                            <table class="text-light table table-bordered mt-2 mb-2 indigo" style="width: 50%; margin-left: 25%; margin-right: 25%;">
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">College</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">National Institute of Technology Patna</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Branch</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Electrical Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">YOP</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">2023</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row justify-content-center text-light"> <h2 class="lead" style="font-weight: 700; font-family: 'Calligraffitti',cursive; font-size: 2.5vw; text-decoration: underline;">Intermediate</h2></div>
+                        <div class="container-fluid text-light">
+                            <table class="text-light table table-bordered mt-2 mb-2 indigo" style="width: 50%; margin-left: 25%; margin-right: 25%;">
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">School</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Saint John's Academy</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Stream</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Science (Maths + Computer Science)</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">YOP</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">2017</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">Score</td>
+                                    <td class="text-center text-wrap" style="font-weight: 700; font-family: 'Allura',cursive; font-size: 2.5vw;">88%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="text-light text wrap text-center" style="font-size: 2vw; font-style: italic; font-family: 'Calligraffitti',cursive;">
+                            For Complete info get my resume <a class="text-light" href="https://drive.google.com/file/d/1VDEKSQT-p-BN4Nl2WX6xUkqwmyn_uA4t/view?usp=sharing" style="text-decoration: none; text-decoration-color: none; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1.5vw;" id="resume">here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="container-fluid page-holder bg-cover mt-0 mb-5" style="background: url(https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+                    <div class="row text-center justify-content-center mt-3 pt-3 pb-3 mb-2" id="proj">
+                        <h1 class="lead  text-light" style="font-family: 'Allura',cursive; font-size: 4vw; font-style: italic; text-decoration: underline; text-shadow: blue;">Projects</h1>
+                        
+                    </div>
+                    <div class="container-fluid">
+                        <div class="card-deck mt-8 mx-5 row">
+                            <div class="card mx-3 mb-4 bg-success text-light">
+                                <img src="./pi.jpg" alt="Pi" class="card-img-top img-fluid" height="20vh">
+                                <h1 class="card-title mt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 2vw;">Anti-Theft Alarm</h1>
+                                <a href="" class="card-link stretched-link"></a>
+                                <p class="card-body text-center">
+                                    This device uses an ultrasonic sensor to detect forced entry and sent photographs clicked by an attached web-cam to the owner.
+                                </p>
+                            </div>
+                            <div class="card mx-3 mb-4 bg-info text-light">
+                                <img src="./arduinoPro.jpg" alt="Arduino" class="card-img-top img-fluid"  height="20vh">
+                                <h1 class="card-title mt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 2vw;">Power Saving Device</h1>
+                                <a href="" class="card-link stretched-link"></a>
+                                <p class="card-body text-center">
+                                    This device switches off all non-essential appliances as soon as the user's mobile bluetooth device get's out of range.
+                                </p>
+                            </div>
+                            <div class="card mb-4 mx-3 bg-warning text-light h-100">
+                                <img src="./card1.jpg" alt="Pi" class="card-img-top img-fluid" height="20vh">
+                                <h1 class="card-title mt-4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 2vw;">News Portal</h1>
+                                <a href="https://brigadierpratap.github.io/MyNews/" class="card-link stretched-link"></a>
+                                <p class="card-body text-center mb-5">
+                                    It is a news portal created by me. It has various sections such as sports , politics , entertainment and current topics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="opacity:0;">
+                <div class="container-fluid page-holder bg-cover mt-4" style="background-image: url(./handshake.jpg); background-repeat: no-repeat; width: 100%;" id="cont">
+                    <hr>
+                    <div class="row justify-content-center text-light mt-3">
+                        <h1 class="lead  text-light alig" style="font-family: 'Allura',cursive; font-size: 4vw; font-style: italic; text-decoration: underline; text-shadow: blue;" id="cont">Contact Me</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <section class="mb-4 text-light justify-content-center">
+
+                            <!--Section heading-->
+                            <h2 class="h1-responsive font-weight-bold text-center my-4"></h2>
+                            <!--Section description-->
+                            <p class=" w-responsive mx-auto mb-5" style="font-family: 'Allura', cursive; font-size: 1.9vw;">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                                a matter of hours to help you.</p>
+                        
+                            <div class="row">
+                        
+                                <!--Grid column-->
+                                <div class="col-md-9 mb-md-0 mb-5">
+                                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        
+                                        <!--Grid row-->
+                                        <div class="row">
+                        
+                                            <!--Grid column-->
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="name" name="name" class="form-control">
+                                                    <label for="name" class="">Your name</label>
+                                                </div>
+                                            </div>
+                                            <!--Grid column-->
+                        
+                                            <!--Grid column-->
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="email" name="email" class="form-control">
+                                                    <label for="email" class="">Your email</label>
+                                                </div>
+                                            </div>
+                                            <!--Grid column-->
+                        
+                                        </div>
+                                        <!--Grid row-->
+                        
+                                        <!--Grid row-->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="subject" name="subject" class="form-control">
+                                                    <label for="subject" class="">Subject</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Grid row-->
+                        
+                                        <!--Grid row-->
+                                        <div class="row">
+                        
+                                            <!--Grid column-->
+                                            <div class="col-md-12">
+                        
+                                                <div class="md-form">
+                                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                    <label for="message">Your message</label>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                        <!--Grid row-->
+                        
+                                    </form>
+                        
+                                    <div class="text-center text-md-left">
+                                        <a class="btn btn-primary" onclick="sendit(document.getElementById(name).innerText, document.getElementById(email).innerText, document.getElementById(subject).innerText, document.getElementById(message).innerText,)">Send</a>
+                                    </div>
+                                    
+                                    <div class="status"></div>
+                                </div>
+                                <!--Grid column-->
+                        
+                                <!--Grid column-->
+                                <div class="col-md-3 text-center">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><i class="fa fa-map-marker-alt fa-2x"></i>
+                                            <p>NIT Patna, Bihar </p>
+                                        </li>
+                        
+                                        <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                                            <p>+ 91 8707880499</p>
+                                        </li>
+                        
+                                        <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                                            <a href="mailto:pmarsingh@gmail.com" style="color: white;">pmarsingh@gmail.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--Grid column-->
+                        
+                            </div>
+                        
+                        </section>
+                        <!--Section: Contact v.2-->
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
